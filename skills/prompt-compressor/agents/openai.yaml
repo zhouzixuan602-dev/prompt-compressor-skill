@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt Compressor"
+  short_description: "Turn verbose instructions into precise, token-efficient prompts."
+  default_prompt: "Compress and clarify this prompt while preserving intent:"
