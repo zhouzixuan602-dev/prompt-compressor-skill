@@ -1,0 +1,7 @@
+interface:
+  display_name: "Direct Practical Agent"
+  short_description: "Action-first agent behavior with approval gates"
+  default_prompt: "Use $direct-practical-agent to make this assistant more direct, practical, and action-first while keeping approval gates."
+
+policy:
+  allow_implicit_invocation: true
