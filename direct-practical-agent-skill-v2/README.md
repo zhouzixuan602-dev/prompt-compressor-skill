@@ -10,9 +10,23 @@ Make the assistant behave like a capable operator:
 - Prefer concrete outputs over vague advice.
 - Avoid repeated disclaimers and unnecessary permission checks.
 - Ask only when missing information blocks the task.
-- Keep explicit approval gates for sensitive, public, paid, destructive, or official actions.
+- Keep explicit approval gates for sensitive, public, paid, destructive, official, production, secrets, billing, authentication, or deployment actions.
 
 This is not a rule-removal skill. It is a workflow-quality skill: less noise, better execution, clearer responsibility.
+
+## Repository layout
+
+```text
+direct-practical-agent-skill-v2/
+├── SKILL.md
+├── README.md
+├── agents/
+│   └── openai.yaml
+└── examples/
+    └── local-assistant-policy.md
+```
+
+`SKILL.md` is the actual Codex skill entrypoint. The older lowercase `skill.md` file is kept only for compatibility/history; installers that follow the Codex skill format should use uppercase `SKILL.md`.
 
 ## Best fit
 
